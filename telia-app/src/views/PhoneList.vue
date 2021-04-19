@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="phones-list">
     <h1>{{ selectedBrand }}</h1>
-    <div class="phones-page__wrap" v-if="selectedBrandPhones">
+    <div class="phones-list__wrap" v-if="selectedBrandPhones">
       <Phone
         v-for="(item, index) in selectedBrandPhones"
         :key="index"
@@ -84,7 +84,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.phones-page {
+.phones-list {
   &__wrap {
     display: flex;
     flex-wrap: wrap;

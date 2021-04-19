@@ -1,6 +1,6 @@
 <template>
-  <div class="phones-page">
-    <div class="phones-page__wrap">
+  <div class="brands">
+    <div class="brands__wrap">
       <Phone
         v-for="(item, index) in allBrands"
         @selected-phone="selectedBrand"
@@ -43,7 +43,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.phones-page {
+.brands {
   &__wrap {
     display: flex;
     flex-wrap: wrap;
