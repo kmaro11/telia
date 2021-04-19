@@ -1,10 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
 import Phone from '@/components/Phone.vue'
-// import { shallowMount, createLocalVue } from '@vue/test-utils'
-// import Vuex from 'vuex'
-// import myModule from '@/store/phone.js'
-//
-// const localVue = createLocalVue()
 
 let wrapper = null
 
