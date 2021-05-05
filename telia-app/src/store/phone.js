@@ -3,7 +3,7 @@ import router from "../router/index"
 
 const state = {
   allBrands: [],
-  allPhones: {}
+  allPhones: {},
 }
 
 const actions = {

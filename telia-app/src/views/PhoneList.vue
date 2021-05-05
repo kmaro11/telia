@@ -62,10 +62,7 @@ export default {
       return this.allSelectedPhones.some((item) => item === phone.contentKey)
     },
     saveSelectedPhones () {
-      localStorage.setItem('selectedPhones', JSON.stringify({
-        phoneBrand: this.selectedBrand,
-        selectedPhones: this.allSelectedPhones
-      }))
+      localStorage.setItem('selectedPhones', JSON.stringify(this.allSelectedPhones))
     },
     getSavedPhones () {
       const phones = localStorage.getItem('selectedPhones')
@@ -73,7 +70,7 @@ export default {
         : false
 
       if (phones.phoneBrand === this.selectedBrand) {
-        this.allSelectedPhones = [...phones.selectedPhones]
+        this.allSelectedPhones = [...phones.selectedPhones, ...this.allSelectedPhones]
       }
     }
   },
